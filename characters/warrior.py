@@ -1,9 +1,11 @@
 from game_logic.character import Character
 import random
 
+# Warrior Class
+# A fierce fighter with powerful melee attacks and special abilities.
 # Special Abilities: 
-# Skull Bash that deals 1.5x damage with a 1 turn cooldown
-# Brass Knuckles that deals 0.7x to 1.1x attack power damage based on missing health
+    # Skull Bash that deals 1.5x damage with a 1 turn cooldown
+    # Brass Knuckles that deals 0.7x to 1.1x attack power damage based on missing health
 
 class Warrior(Character):
     def __init__(self, name):

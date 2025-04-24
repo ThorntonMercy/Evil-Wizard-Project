@@ -2,8 +2,8 @@ from game_logic.character import Character
 
 # ARCHER CLASS
 # Special Abilities: 
-# Focus Shot deals 1.5x damage
-# Acid Spray Shot that gains a barrier for 2 turns
+    # Focus Shot deals 1.5x damage 
+    # Acid Spray Shot that gains a barrier for 2 turns
 
 class Archer(Character):
     def __init__(self, name):

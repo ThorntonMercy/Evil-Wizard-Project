@@ -1,9 +1,10 @@
 from game_logic.character import Character
 
 # MAGE CLASS
+# A powerful spellcaster who uses magic to deal devastating damage and evade attacks.
 # Special Abilities: 
-# Stargaze deals 3x damage but kicks back a stun for 1 turn 
-# Disguise (hidden from damage and heals). 
+    # Stargaze deals 3x damage but kicks back a stun for 1 turn 
+    # Disguise (hidden from damage and heals). 
 class Mage(Character):
     def __init__(self, name):
         super().__init__(name, health=120, attack_power=30)

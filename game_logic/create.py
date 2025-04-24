@@ -7,7 +7,7 @@ from characters.raven import Raven
 
 def create_character():
     print("Choose your class:")
-    print("1. Warrior\n2. Mage\n3. Archer\n4. Shapeshifter\n5. Necromancer")
+    print("1. Warrior\n2. Mage\n3. Archer\n4. Shapeshifter\n5. Necromancer\n6. Raven")
     choice = input("Enter number: ")
     name = input("Enter your name: ")
 

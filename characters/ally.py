@@ -6,7 +6,8 @@ from characters.shapeshifter import Shapeshifter
 from characters.necromancer import Necromancer
 from characters.raven import Raven
 
-# Randomly assigned an ally to help fight the wizard
+# A randomly generated ally to assist the player in taking down the evil wizard.
+
 def create_random_ally():
     ally_classes = [Warrior, Mage, Archer, Shapeshifter, Necromancer, Raven]
     AllyClass = random.choice(ally_classes)

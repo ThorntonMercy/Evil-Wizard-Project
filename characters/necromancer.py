@@ -1,13 +1,15 @@
 import random
 from game_logic.character import Character
 
+# Necromancer Class
+# A dark soul walking in the afterlife who uses magic to control the dead and unleash powerful attacks.
 # Special Abilities:
-# Grave Bust that deals 1.4x of attack power with a 40% chance
-# Raise Hell that deals a flat 25 damage with a 25% chance of triggering. 
+    # Grave Bust that deals 1.4x of attack power with a 40% chance of triggering.
+    # Raise Hell that deals a flat 25 damage with a 25% chance of triggering. 
 
 class Necromancer(Character):
     def __init__(self, name):
-        super().__init__(name, health=130, attack_power=22)
+        super().__init__(name, health=150, attack_power=22)
 
     def grave_bust(self, opponent):
         if random.random() <= 0.4:

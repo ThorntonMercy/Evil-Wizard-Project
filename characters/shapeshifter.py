@@ -1,9 +1,11 @@
 from game_logic.character import Character
 import random
 
+# Shapeshifter Class
+# A mystical creature who transforms under the moonlight, using powerful abilities to heal and stun.
 # Special Abilities:
-# Moonlight Slash that fully heals and deals 2.5x attack power damage with a 3 turn cooldown
-# Moon Rising Howl that stuns the opponent for 2 turns
+    # Moonlight Slash that fully heals and deals 2.5x attack power damage with a 3 turn cooldown
+    # Moon Rising Howl that stuns the opponent for 2 turns
 
 class Shapeshifter(Character):
     def __init__(self, name):

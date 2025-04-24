@@ -1,14 +1,16 @@
 import random
 from game_logic.character import Character
 
+# The Evil Wizard Enemy
+# A powerful dark sorcerer with an ultra high health, who uses destructive magic to annihalate foes. 
 # Special Abilities:
-# - Dark Blast that deals 1.0x to 1.4x attack power damage
-# - Blazing Inferno that deals 0.5x attack power damage and applies burn to both self and opponent
-# - Blight that deals 0.2x to 0.4x attack power damage
+    # - Dark Blast that deals 1.0x to 1.4x attack power damage
+    # - Blazing Inferno that deals 0.5x attack power damage and applies burn to both self and opponent
+    # - Blight that deals 0.2x to 0.4x attack power damage
 
 class EvilWizard(Character):
     def __init__(self, name="Diablo"):
-        super().__init__(name, health=400, attack_power=20)
+        super().__init__(name, health=450, attack_power=20)
 
     def dark_blast(self, opponent):
         damage = self.attack_power * random.uniform(1.0, 1.4)
