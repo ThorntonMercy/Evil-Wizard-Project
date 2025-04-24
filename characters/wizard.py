@@ -8,7 +8,7 @@ from game_logic.character import Character
 
 class EvilWizard(Character):
     def __init__(self, name="Diablo"):
-        super().__init__(name, health=350, attack_power=20)
+        super().__init__(name, health=400, attack_power=20)
 
     def dark_blast(self, opponent):
         damage = self.attack_power * random.uniform(1.0, 1.4)

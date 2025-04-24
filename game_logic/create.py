@@ -3,6 +3,7 @@ from characters.mage import Mage
 from characters.necromancer import Necromancer
 from characters.shapeshifter import Shapeshifter
 from characters.warrior import Warrior
+from characters.raven import Raven
 
 def create_character():
     print("Choose your class:")
@@ -20,6 +21,8 @@ def create_character():
         return Shapeshifter(name)
     elif choice == '5':
         return Necromancer(name)
+    elif choice == '6':
+        return Raven(name)
     else:
         print("Invalid choice. Defaulting to Warrior.")
         return Warrior(name)

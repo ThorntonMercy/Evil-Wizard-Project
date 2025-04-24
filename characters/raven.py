@@ -1,4 +1,3 @@
-import random
 from game_logic.character import Character
 
 class Raven(Character):
@@ -42,3 +41,17 @@ class Raven(Character):
             self.bird_strike(opponent)
         elif choice == "2":
             self.shadow_form(opponent)
+            
+def end_turn(self):
+        if self.bird_strike_cooldown > 0:
+            self.bird_strike_cooldown -= 1
+
+        if self.shadow_form_cooldown > 0:
+            self.shadow_form_cooldown -= 1
+
+        if self.shadow_form_turns > 0:
+            self.shadow_form_turns -= 1
+            if self.shadow_form_turns == 0:
+                self.shadow_form_active = False
+                self.attack_power /= 1.5
+                print(f"{self.name}'s Shadow Form fades. Attack power returns to normal.")
