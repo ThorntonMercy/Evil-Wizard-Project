@@ -9,5 +9,6 @@ from characters.necromancer import Necromancer
 def create_random_ally():
     ally_classes = [Warrior, Mage, Archer, Shapeshifter, Necromancer]
     AllyClass = random.choice(ally_classes)
-    ally_name = random.choice(["Lyra", "Finn", "Kestrel", "Nyx", "Fenrir", "Marva", "Merlin", "Sable"])
+    ally_name = random.choice(["Lyra", "Finn", "Kestrel", "Nyx", "Fenrir", 
+                               "Marva", "Merlin", "Sable"])
     return AllyClass(f"{ally_name}")

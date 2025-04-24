@@ -138,6 +138,12 @@ def battle(player, ally, wizard):
             else:
                 ally.attack(wizard)
 
+        if hasattr(player, "end_turn"):
+            player.end_turn()
+
+        if hasattr(ally, "end_turn"):
+            ally.end_turn()
+
         turn += 1
 
     # End of battle
