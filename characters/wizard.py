@@ -2,7 +2,7 @@ import random
 from game_logic.character import Character
 
 # Special Abilities:
-# - Dark Blast that deals 1.0x attack power damage
+# - Dark Blast that deals 1.0x to 1.4x attack power damage
 # - Blazing Inferno that deals 0.5x attack power damage and applies burn to both self and opponent
 # - Blight that deals 0.2x to 0.4x attack power damage
 
