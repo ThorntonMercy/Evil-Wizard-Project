@@ -5,7 +5,7 @@ from game_logic.battle import battle
 
 def main():
     player = create_character()
-    ally = create_random_ally()
+    ally = create_random_ally(player)
     print(f"\n {ally.name} is here to help in your battle against the evil wizard!")
     wizard = EvilWizard("Diablo")
     battle(player, ally, wizard)
