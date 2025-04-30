@@ -41,9 +41,9 @@ class Character:
             healed = min(heal_amount, self.max_health - self.health)
             if healed > 0:
                 self.health += healed
-                print(f"✨ Fairy Dust heals {self.name} for {healed:.1f} HP! Now at {self.health:.1f}/{self.max_health}")
+                print(f"Fairy Dust heals {self.name} for {healed:.1f} HP! Now at {self.health:.1f}/{self.max_health}")
             else:
-                print(f"✨ Fairy Dust sparkles, but {self.name} is already at full health.")
+                print(f"Fairy Dust sparkles, but {self.name} is already at full health.")
 
     def call_for_healing(self):
         missing_health = self.max_health - self.health
@@ -54,7 +54,7 @@ class Character:
         heal_amount = min(missing_health * healing_percent, self.max_health - self.health)
         self.health += heal_amount
         self.health = round(self.health, 1)
-        print(f"🧪 {self.name} calls for healing and restores {heal_amount:.1f} HP! Now at {self.health:.1f}/{self.max_health}")
+        print(f"{self.name} calls for healing and restores {heal_amount:.1f} HP! Now at {self.health:.1f}/{self.max_health}")
 
     def display_stats(self):
         print(f"{self.name}'s Stats ➤ HP: {self.health:.1f}/{self.max_health}, Attack: {self.attack_power}")

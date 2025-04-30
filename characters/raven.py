@@ -3,7 +3,7 @@ from game_logic.character import Character
 # RAVEN CLASS
 # A deviant bird that uses its agility and dark powers to strike from the shadows.
 # Special Abilities: 
-    # Bird strike # deals 2x attack power damage with a 2 turn cooldown
+    # Bird strike deals 2x attack power damage with a 2 turn cooldown
     # Shadow form that heals to full health and increases attack power by 1.5x for 3 turns with a 5 turn cooldown
 
 class Raven(Character):

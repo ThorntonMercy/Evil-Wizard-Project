@@ -1,9 +1,5 @@
 import random
-from characters.mage import Mage
-from characters.warrior import Warrior
-from characters.archer import Archer
-from characters.shapeshifter import Shapeshifter
-from characters.necromancer import Necromancer
+
 
 def battle(player, ally, wizard):
     turn = 1
