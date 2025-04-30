@@ -1,4 +1,4 @@
-Core Requirements: 
+-- Core Requirements --
 
 * Flesh out Mage, Warrior, and Evil Wizard classes
 * Add 2 new classes
@@ -9,12 +9,12 @@ Core Requirements:
 * End game message to congratulate for winning or a notice of defeat by the Wizard
 
 
-Bonus Tasks: 
+-- Bonus Tasks -- 
 * Create additional characters (I did +2)
 * Add random elements to the wizard attacks or advanced abilities.  
 
 
-Classes
+-- Classes -- 
 
 Mage: Stargaze that deals 3x damage but stuns the mage, and Disguise which hides him from incoming damage and heals him.
 Warrior: Skull Bash that deals 1.5x damage with a 1 turn cooldown, and Brass Knuckles that deals 0.7-1.1x attack power damage based off of his missing health
