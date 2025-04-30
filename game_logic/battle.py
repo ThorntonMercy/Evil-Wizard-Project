@@ -1,18 +1,22 @@
 import random
 
-
 def battle(player, ally, wizard):
     turn = 1
     while player.health > 0 and wizard.health > 0:
         print(f"\n===== TURN {turn} =====")
-        
+
         # Apply burn effects
         player.take_burn_damage()
         wizard.take_burn_damage()
 
         # Player's turn
         print("1. Attack\n2. Special Ability\n3. Fairy Heal\n4. Call for Healing\n5. Stats")
-        choice = input("Your action: ")
+        valid_choices = {'1', '2', '3', '4', '5'}
+        choice = ''
+        while choice not in valid_choices:
+            choice = input("Your action: ").strip()
+            if choice not in valid_choices:
+                print("Invalid input. Please choose 1–5.")
 
         if choice == '1':
             player.attack(wizard)
@@ -21,7 +25,12 @@ def battle(player, ally, wizard):
             print("\nChoose a special move:")
             for key, move in special_moves.items():
                 print(f"{key}. {move}")
-            special_choice = input("Enter number: ")
+            special_keys = set(special_moves.keys())
+            special_choice = ''
+            while special_choice not in special_keys:
+                special_choice = input("Enter number: ").strip()
+                if special_choice not in special_keys:
+                    print(f"Invalid input. Please choose from: {', '.join(special_keys)}")
             player.use_special_move(special_choice, wizard)
         elif choice == '3':
             player.attempt_fairy_heal()
@@ -29,9 +38,6 @@ def battle(player, ally, wizard):
             player.call_for_healing()
         elif choice == '5':
             player.display_stats()
-            continue
-        else:
-            print("Invalid input. Try again.")
             continue
 
         # Wizard's turn

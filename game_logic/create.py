@@ -8,8 +8,18 @@ from characters.raven import Raven
 def create_character():
     print("Choose your class:")
     print("1. Warrior\n2. Mage\n3. Archer\n4. Shapeshifter\n5. Necromancer\n6. Raven")
-    choice = input("Enter number: ")
-    name = input("Enter your name: ")
+    
+    valid_classes = {'1', '2', '3', '4', '5', '6'}
+    choice = ''
+    while choice not in valid_classes:
+        choice = input("Enter number: ").strip()
+        if choice not in valid_classes:
+            print("Invalid choice. Please enter a number from 1 to 6.")
+
+    name = input("Enter your name: ").strip()
+    if not name:
+        name = "Hero"
+        print("No name entered. Defaulting to 'Hero'.")
 
     if choice == '1':
         return Warrior(name)
@@ -23,6 +33,3 @@ def create_character():
         return Necromancer(name)
     elif choice == '6':
         return Raven(name)
-    else:
-        print("Invalid choice. Defaulting to Warrior.")
-        return Warrior(name)
