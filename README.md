@@ -16,12 +16,17 @@
 
 -- Classes -- 
 
-Mage: Stargaze that deals 3x damage but stuns the mage, and Disguise which hides him from incoming damage and heals him.
-Warrior: Skull Bash that deals 1.5x damage with a 1 turn cooldown, and Brass Knuckles that deals 0.7-1.1x attack power damage based off of his missing health
-Archer: Focus Shot that deals 1.5x damage and Acid Spray Shot Acid Spray Shot which grants a protective damage barrier for 2 turns.
-Raven:	Bird strike that deals 2x attack damage with a 2 turn cooldown, and Shadow Form that heals to full health and increases attack power by 1.5x for 3 turns with a 5 turn cooldown 
-Necromancer:	Grave Bust that deals 1.4x attack power but only has a 40% chance of actually triggering, and Raise Hell which deals a flat 25 damage with only a 25% chance of triggering. 
-Shapeshifter:	Moonlight Slash which fully heals and deals a 2.5x attack damage with a 3 turn cooldown, and Moon Rising Howl that stuns the Wizard for 2 turns 
+* Mage: Stargaze that deals 3x damage but stuns the mage, and Disguise which hides him from incoming damage and heals him.
+
+* Warrior: Skull Bash that deals 1.5x damage with a 1 turn cooldown, and Brass Knuckles that deals 0.7-1.1x attack power damage based off of his missing health
+
+* Archer: Focus Shot that deals 1.5x damage and Acid Spray Shot Acid Spray Shot which grants a protective damage barrier for 2 turns.
+
+* Raven:	Bird strike that deals 2x attack damage with a 2 turn cooldown, and Shadow Form that heals to full health and increases attack power by 1.5x for 3 turns with a 5 turn cooldown 
+
+* Necromancer:	Grave Bust that deals 1.4x attack power but only has a 40% chance of actually triggering, and Raise Hell which deals a flat 25 damage with only a 25% chance of triggering. 
+
+* Shapeshifter:	Moonlight Slash which fully heals and deals a 2.5x attack damage with a 3 turn cooldown, and Moon Rising Howl that stuns the Wizard for 2 turns 
 
 
 -- Evil Wizard --
