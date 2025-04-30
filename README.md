@@ -33,18 +33,20 @@
 
 Health is 450 to give more of a challenge for a 2 player team. 
 
-Dark Blast 	deals 1-1.4x attack power
-Blazing Inferno 	50% attack power but inflicts a burn on himself and the player that lasts for 3 turns 
-Blight	deals 20-40% attack power 
+* Dark Blast 	deals 1-1.4x attack power
+
+* Blazing Inferno 	50% attack power but inflicts a burn on himself and the player that lasts for 3 turns
+
+* Blight	deals 20-40% attack power 
 
 
 
 -- Other Mechanics -- 
 
-Left the turn mechanic alone to not verify if a move was still on cooldown and could therefore not be used, as I liked the consequences of not paying attention during gameplay. 
+* Left the turn mechanic alone to not verify if a move was still on cooldown and could therefore not be used, as I liked the consequences of not paying attention during gameplay. 
 
-Introduction of an Ally class, which is a randomly chosen NPC that can be any of the character classes minus the player’s chosen class or Evil Wizard. 
+* Introduction of an Ally class, which is a randomly chosen NPC that can be any of the character classes minus the player’s chosen class or Evil Wizard. 
 
-Fairy Healing - randomized healing
+* Fairy Healing - randomized healing
 
-Call for Healing - guaranteed healing 
+* Call for Healing - guaranteed healing 
